@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeCodeCamp Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 id="title">FreeCodeCamp Survey Form</h1>
+        <p id="description">Thanks for taking your time to help us to improve the application</p>
+    </header>
+    <div class="container">
+        <form action="noaction.php" id="survey-form">
+            <!-- FormDetails -->
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Enter Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Enter Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="age" id="number-label">Age</label>
+                <input type="number" id="number" min="14" max="60" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <p>Which option describes your current role?</p>
+                <select name="role" id="dropdown">
+                    <option disabled selected value="SelectCurrentRole">Select Current Role</option>
+                    <option value="Student">Student</option>
+                    <option value="learner">Learner</option>
+                    <option value="FullTimeJob">Full Time Job</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <label for="radio-group" id="radio-label">
+                    <input type="radio" value="Definitely" name="user-recommend" checked>Definitely
+                </label>
+                <label for="radio-group" id="radio-label">
+                    <input type="radio" value="Maybe" name="user-recommend">Maybe
+                </label>
+                <label for="radio-group" id="radio-label">
+                    <input type="radio" value="Not-sure" name="user-recommend">Not sure
+                </label>
+            </div>
+            <div class="form-group">
+                <p>What would you like to improved?<span>(check all that apply)</span></p>
+                <label for="checked" id="checked-label">
+                    <input type="checkbox" name="front-end" value="Front-end-projects">
+                    Front-end Projects
+                </label>
+                <label for="checked" id="checked-label">
+                    <input type="checkbox" name="front-end" value="Back-end-projects">
+                    Back-end Projects
+                </label>
+                <label for="checked" id="checked-label">
+                    <input type="checkbox" name="front-end" value="Android-app-projects">
+                    Android-app Projects
+                </label>
+                <label for="checked" id="checked-label">
+                    <input type="checkbox" name="front-end" value="Challenges">
+                    Challenges
+                </label>
+                <label for="checked" id="checked-label">
+                    <input type="checkbox" name="front-end" value="Blog">
+                    Blog
+                </label>
+                <label for="checked" id="checked-label">
+                    <input type="checkbox" name="front-end" value="Forum">
+                    Forum
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Any Comments or suggestion?</p>
+                <textarea name="comment" id="text-comment" placeholder="Enter your suggestion here..."></textarea>
+            </div>
+            <div class="form-group">
+                <Button id="submit" class="submit-button">Submit</Button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
